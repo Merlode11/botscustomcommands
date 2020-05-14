@@ -1,0 +1,33 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": true,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "whitelist",
+    "roles": [
+      "676445020470902804",
+      "676445028003872798"
+    ],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "label",
+    "content": "unhide"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{set;moderator;{user.tag}}\n{if;{user.id;{args;1}};==;{l}user.id-ERROR1-no-user-matching-your-search{r};<:false:676895506080858112> **Vous devez mentionner un membre présent sur le serveur !**;{if;{user.roles;{args;1}};includes;678700277062434844;{if;{args;2};==;;<:false:676895506080858112> **Il faut inclure une raison !**;{user.removerole;678700277062434844;{args;1}}<:true:676895505984389120> **Le membre à bien été réouvert au monde !**{user.send;Vous vous êtes réouvert au monde par `{get;moderator}` pour : **{args;2;infinity}**;{args;1}}};<:false:676895506080858112> **Ce membre n'est pas caché !**}}",
+      "id": "5e8f174636c899002e026ae9"
+    }
+  ],
+  "formatVersion": "1.2"
+}

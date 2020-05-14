@@ -1,0 +1,33 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": [
+      "manageChannels"
+    ]
+  },
+  "trigger": {
+    "type": "label",
+    "content": "maintenance"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{if;{args;1};==;;<:false:568769356041945099> Il est impossible de ne pas mentionner de salon !;{if;{args;1};==;{l}channel.mention-ERROR1-no-channel-matching-your-search{r};<:false:568769356041945099> Veuillez mentionner un salon valide auquel j'ai accès !;{if;{args;2};==;;<:false:568769356041945099> Veuillez mettre une raison !;<:true:568769356293472268> Le salon {args;1} à bien été placé en maintenance Pour la raison **{args;2;infinity}** <a:valide:552815067259731970>{channel.send;{a!ae;--edit=\"676826613215657994\";--title=\"**__UN SALON EST EN MAINTENANCE__**\";--color=\"#ff001e\";--footer=\"Le salon est en maintenance pendant une durée indéterminé\";--thumbnail=\"https://images-ext-1.discordapp.net/external/vVWqCMmf0gtnvGvAlYuQmBcB_DT_4DjPuFA9nJ5z_lM/https/i.imgur.com/BOOq7hk.gif\";--image=\"https://i.pinimg.com/originals/4d/a1/ad/4da1ad7c96b1c208e5178e311d90a494.gif\";--description=\"Nous sommes désolés mais le salon {args;1} est actuellement en maintenance.\\n\\n**Il est en maintenance pour cette raison:**\\n{args;2;infinity}\\n\\nNous sommes désolés de la gène occasionnée et nous faisons notre maximum pour remettre ce salon en état le plus vite possible.\\n\\n*Cordialement\\nLe Staff*\"};676673424390619156}}}}",
+      "channel": null,
+      "id": "5e888f8536c899002e01d068"
+    }
+  ],
+  "formatVersion": "1.2"
+}

@@ -1,0 +1,30 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": true,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "label",
+    "content": "bienvenue"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{a!ae;--color=\"{user.color;true}\";--icon=\"{user.avatarURL}\";--name=\"{user.username}\";--footer=\"Vous aussi souhaitez la bienvenue avec {guild.prefix}bienvenue !\";--image=\"{choose;http://francheska45.f.r.pic.centerblog.net/v9cpkcer.gif;https://p1.storage.canalblog.com/20/71/1072267/81935345_o.gif;https://media1.tenor.com/images/091dce7dfd72eaf126bb4767737c1a7b/tenor.gif;https://media1.tenor.com/images/e4acad32719998d3e3e8d93f5f80c267/tenor.gif;https://i.imgur.com/hzXdwnd.gif}\";--timestamp=\"true\";--description=\"{user.mention} te souhaite la bienvenue et également une bonne intégration {if;{args;1};==;;{perget;lastmemberjoin};{args;1}}!\\n\\nAmuse toi bien !\"}{message.delete}",
+      "id": "5e98cefc4634c30026636e69"
+    }
+  ],
+  "formatVersion": "1.2"
+}

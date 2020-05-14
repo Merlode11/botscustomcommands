@@ -1,0 +1,35 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": true,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "whitelist",
+    "roles": [
+      "683422296047878172",
+      "676445028003872798",
+      "676445020470902804",
+      "683422726324748390"
+    ],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "label",
+    "content": "hide"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{if;{user.id;{args;1}};==;{l}user.id-ERROR1-no-user-matching-your-search{r};<:false:676895506080858112> **Vous devez mentionner un membre présent sur le serveur !**;{if;{user.roles;{args;1}};includes;678700277062434844;<:false:676895506080858112> **Ce membre est déjà caché !**;{if;{args;2};==;;<:false:676895506080858112> **Il faut inclure une raison !**;{user.addrole;678700277062434844;{args;1}}{a!warn;{args;1};Vous vous êtes fait caché par `{user.tag}` pour : **{args;2;infinity}**}}}}",
+      "id": "5eb705d38f44120026a71173"
+    }
+  ],
+  "formatVersion": "1.2"
+}

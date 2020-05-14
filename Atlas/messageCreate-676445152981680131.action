@@ -1,0 +1,33 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": true,
+    "quiet": true
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [
+      "676445020470902804",
+      "676445023251726337"
+    ],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "messageCreate",
+    "content": "676445152981680131"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{set;channelid;676821482667507712}\n{user.send;Votre candidature pour rejoindre le Staff de {guild.name} à bien été envoyé ! <:valide:688742184043938023>\n*Un conseil : **soyez patient**, votre candidature sera acceptée plus facilement si vous ne demandez pas tous les jours où ça en ai...*}\n{channel.send;{a!ae;--title=\"CANDIDATURE\";--icon=\"{user.avatarURL}\";--name=\"{user.username}\";--footer=\"Une candidature envoyé par {user.tag}\";--footer-icon=\"{user.avatarURL}\";--description=\"{message.content}\";--color=\"{user.color;true}\";--timestamp=\"true\"};{get;channelid}}\n{message.delete}{message.react;<:valide:688742184043938023>;{channel.lastMessageID;{get;channelid}};{get;channelid}} {message.react;<:error:698174171905261630>;{channel.lastMessageID;{get;channelid}};{get;channelid}}",
+      "id": "5eae82df944c4a0027c0fbd4"
+    }
+  ],
+  "formatVersion": "1.2"
+}
