@@ -1,0 +1,30 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "guildMemberRemove",
+    "content": null
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{if;{perget;lastmemberjoin};==;{user.mention};{perset;lastmemberjoin;hasleave}}",
+      "id": "5ebd36028f44120026a7fc92"
+    }
+  ],
+  "formatVersion": "1.2"
+}
