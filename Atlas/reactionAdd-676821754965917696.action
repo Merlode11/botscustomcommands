@@ -1,0 +1,33 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": true
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [
+      "676676739497197578"
+    ],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "reactionAdd",
+    "content": "676821754965917696"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{set;channelid;{message.channelID}}\n{if;{message.content};!==;;\n{if;{length;{message.content}};<;1020;\n{a!ae;--color=\"{user.color;true}\";--field1name=\":speaking_head: Report par :\";--field1value=\"{user.mention} (`{user.id}`)\";--field1inline;--field2name=\":bust_in_silhouette: Personne report :\";--field2value=\"{user.mention;{message.authorID}} (`{message.authorID}`)\";--field2inline;--field3name=\":notepad_spiral: Salon :\";--field3value=\"{channel.mention} (`{channel.id}`)\";--field3inline;--field4name=\":clock2: Heure *de l'envoi du message* :\";--field4value=\"{message.timestamp;true}\";--field4inline;--field5name=\":page_facing_up: Message :\";--field5value=\"**{message.content}**\";--field5inline;--title=\"NOUVEAU REPORT\";--image=\"{message.attachment}\";--timestamp=\"true\";--description=\"__Voici toute les informations du report :__\\n:link: [accéder au message](https://discordapp.com/channels/{guild.id}/{message.channelID}/{message.id})\"};\n{a!ae;--color=\"{user.color;true}\";--field1name=\":speaking_head: Report par :\";--field1value=\"{user.mention} (`{user.id}`)\";--field1inline;--field2name=\":bust_in_silhouette: Personne report :\";--field2value=\"{user.mention;{message.authorID}} (`{message.authorID}`)\";--field2inline;--field3name=\":notepad_spiral: Salon :\";--field3value=\"{channel.mention} (`{channel.id}`)\";--field3inline;--field4name=\":clock2: Heure *de l'envoi du message* :\";--field4value=\"{message.timestamp;true}\";--field4inline;--title=\"NOUVEAU REPORT\";--image=\"{message.attachment}\";--timestamp=\"true\";--description=\"__Voici toute les informations du report :__\\n:link: [accéder au message](https://discordapp.com/channels/{guild.id}/{message.channelID}/{message.id})\"}\n{a!ae;--color=\"{user.color;true}\";--title=\":page_facing_up: Message :\";--description=\"{message.content}\"}};{if;{message.hasEmbed};==;true;{a!ae;--color=\"{user.color;true}\";--field1name=\":speaking_head: Report par :\";--field1value=\"{user.mention} (`{user.id}`)\";--field1inline;--field2name=\":bust_in_silhouette: Personne report :\";--field2value=\"{user.mention;{message.authorID}} (`{message.authorID}`)\";--field2inline;--field3name=\":notepad_spiral: Salon :\";--field3value=\"{channel.mention} (`{channel.id}`)\";--field3inline;--field4name=\":clock2: Heure *de l'envoi du message* :\";--field4value=\"{message.timestamp;true}\";--field4inline;--field5name=\":page_facing_up: Message :\";--field5value=\"**message en __EMBED__**\";--field5inline;--title=\"NOUVEAU REPORT\";--image=\"{message.attachment}\";--timestamp=\"true\";--description=\"__Voici toute les informations du report :__\\n:link: [accéder au message](https://discordapp.com/channels/{guild.id}/{message.channelID}/{message.id})\"}}}\n\n{user.send;{a!ae;--color=\"{user.color;true}\";--title=\"REPORT ENVOYÉ\";--timestamp=\"true\";--description=\"Le report concertant [le message](https://discordapp.com/channels/{guild.id}/{get;channelid}/{message.id}) de {user.mention;{message.authorID}} (`{message.authorID}`) a bien été transmis à notre équipe de modération !\\n\\nGardez en tête que tout report abusif est sanctionné par notre équipe !\"}}",
+      "channel": "676676306322325544",
+      "id": "5e7fb1c236c899002e00f61a"
+    }
+  ],
+  "formatVersion": "1.2"
+}
