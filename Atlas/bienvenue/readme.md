@@ -5,7 +5,7 @@ Dans ce dossier, vous trouverez **3** Actions. Je vous conseille d'en mettre qu'
 
 Importez la commande [la commande bienvenue](https://github.com/Merlode11/botscustomcommands/blob/master/Atlas/bienvenue/label-bienvenue.action) *(il faut la télécharger au préalable)*. Une fois celle-ci importée, vous pouvez passer à l'étape suivante :
 
-# Deuxième étape :
+## Deuxième étape :
 
 ### Initialiser la variable quand un membre rejoint
 
