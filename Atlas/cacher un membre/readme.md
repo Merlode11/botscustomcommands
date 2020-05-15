@@ -1,0 +1,3 @@
+# Commandes hide et unhide
+
+Ces commandes servent à chacher un membre si jamais il a un lien dans le statut, un nom innaproprié, une photo de profile innapropriée, etc...
