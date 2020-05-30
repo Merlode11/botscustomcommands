@@ -25,7 +25,7 @@
     {
       "fallback": true,
       "type": "channel",
-      "message": "{message.delete} {if;{message.content};!==;;{a!ae;--title=\"SUGGESTION\";--description=\"{message.content}\";--color=\"{user.color;true}\";--thumbnail=\"{user.avatarURL}\";--timestamp=\"true\";--name=\"{user.username}\"} {message.react;:white_check_mark:;{channel.lastMessageID};{channel.id}} {message.react;heavy_minus_sign;{channel.lastMessageID};{channel.id}} {message.react;:x:;{channel.lastMessageID};{channel.id}};{user.send;<a:refuse:552815066932838403> Vous devez inclure un message !}}",
+      "message": "{message.delete} {if;{message.content};!==;;{a!ae;--footer="UserID : {user.id}";--title=\"SUGGESTION\";--description=\"{message.content}\";--color=\"{user.color;true}\";--thumbnail=\"{user.avatarURL}\";--timestamp=\"true\";--name=\"{user.username}\"} {message.react;:white_check_mark:;{channel.lastMessageID};{channel.id}} {message.react;heavy_minus_sign;{channel.lastMessageID};{channel.id}} {message.react;:x:;{channel.lastMessageID};{channel.id}};{user.send;<a:refuse:552815066932838403> Vous devez inclure un message !}}",
       "id": "5e4ec04d36c899002efd1a8f"
     }
   ],
