@@ -1,0 +1,30 @@
+{
+  "meta": "Exported from https://atlasbot.xyz",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "messageCreate",
+    "content": null
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{message.delete} {if;{message.content};!==;;{a!ae;--footer=\"UserID : {user.id}\";--title=\"SUGGESTION\";--description=\"{message.content}\";--color=\"{user.color;true}\";--thumbnail=\"{user.avatarURL}\";--timestamp=\"true\";--name=\"{user.username}\"} {set;lastmessageID;{channel.lastMessageID}}{message.react;✅;{get;lastmessageID};{channel.id}} {message.react;➖;{get;lastmessageID};{channel.id}} {message.react;❌;{get;lastmessageID};{channel.id}};{user.send;<a:refuse:552815066932838403> Vous devez inclure un message !}}",
+      "id": "5ee36f018f44120026aca963"
+    }
+  ],
+  "formatVersion": "1.2"
+}
