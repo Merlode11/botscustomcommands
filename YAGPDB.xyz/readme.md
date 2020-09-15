@@ -13,7 +13,8 @@ Pour ajouter les customs commands d'YAGPDB, il vous faut d'abord aller sur son d
 Il faura ensuite aller dans l'onglet custom commands (__Core__ **>** __Customs Commands__)
 ![customscommands](https://raw.githubusercontent.com/Merlode11/botscustomcommands/master/images/yagpdb-customscommands.png)
 Ensuite, il faut en créer une nouvelle. Vous aurez à mettre un `Trigger Type`. *Il sera spécifié dans le readme de la custom command*
-Vous avez
+
+Vous avez donc
 
 **`Command`**: With this trigger, the message has to start with the prefix for your server (- by default) followed by the trigger.
 
