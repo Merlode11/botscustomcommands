@@ -6,3 +6,4 @@ Sur mon serveur, j'aime bien cacher un salon aux membre pour le modifier, faire 
 
 Il suffit de l'importer après l'avoir [téléchargé](https://github.com/Merlode11/botscustomcommands/blob/master/Atlas/download.md), comme toutes les actions porposées ici. ![alt](https://raw.githubusercontent.com/Merlode11/botscustomcommands/master/images/import.png) Ensuite, il faut prendre l'id du salon pour le mettre à le place de `ID_DU_SALON` tout à la fin. 
 
+> **penser à tester ce que le bot met quand on fait la commande avec l'edit dans la commande**
