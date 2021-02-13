@@ -10,7 +10,9 @@ Les émojis customisés animés ou non sont acceptés !
 
 ## Bypass des salons/rôles
 Pour bypass des rôles ou des salons ou alors autoriser uniquement cette custom command à être utilisé par certains rôles ou dans certains salons, il faut aller juste en dessous
+
 ![](https://raw.githubusercontent.com/Merlode11/botscustomcommands/master/images/channels-roles_Config.png)
+
 Il faut donc sélectionner l'option que vous souhaitez *(Ignoré ou Requis)* puis sur quel objet vous souhaitez l'avoir *(le rôle "Administrateur" par exemple)*
 
 ## Crédits
