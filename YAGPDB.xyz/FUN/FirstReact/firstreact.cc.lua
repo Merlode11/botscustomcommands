@@ -25,10 +25,10 @@
     {{if eq (index .CmdArgs 1) "total"}}
         {{$mID := sendMessageRetID nil (print "__Réagissez le plus vite possible avec :__ ||`" (index .CmdArgs 0) "`||\n> En attente de gagnant")}}
         {{dbSet $mID "firstreact" (index .CmdArgs 0)}}
-    {{else if eq (index .CmdArgs 1) "hide"}}}}
+    {{else if eq (index .CmdArgs 1) "hide"}}
         {{$mID := sendMessageRetID nil (print "__Réagissez le plus vite possible avec :__ ||" (index .CmdArgs 0) "||\n> En attente de gagnant")}}
         {{dbSet $mID "firstreact" (index .CmdArgs 0)}}
-    {{else if eq (index .CmdArgs 1) "unicode"}}}}
+    {{else if eq (index .CmdArgs 1) "unicode"}}
         {{$mID := sendMessageRetID nil (print "__Réagissez le plus vite possible avec :__ `" (index .CmdArgs 0) "`\n> En attente de gagnant")}}
         {{dbSet $mID "firstreact" (index .CmdArgs 0)}}
     {{else}}
