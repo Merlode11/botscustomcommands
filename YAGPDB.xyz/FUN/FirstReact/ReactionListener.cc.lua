@@ -24,9 +24,10 @@
         {{editMessage nil .Reaction.MessageID $msg}}
     {{else}}
         {{if .Reaction.Emoji.ID}}
-            {{deleteMessageReaction nil .Reaction.MessageID .User.ID (print .Reaction.Emoji.Name ":" .Reaction.Emoji.ID)}}
+                {{.Reaction.Emoji.ID}}
+                {{deleteMessageReaction nil .Reaction.MessageID .User.ID (print .Reaction.Emoji.Name ":" .Reaction.Emoji.ID)}}
         {{else}}
-            {{deleteMessageReaction nil .Reaction.MessageID .User.ID .Emoji.Name}}
+                {{deleteMessageReaction nil .Reaction.MessageID .User.ID .Reaction.Emoji.Name}}
         {{end}}
     {{end}}
 {{end}}
